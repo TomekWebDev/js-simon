@@ -22,11 +22,31 @@
     <h1 class="">Simon</h1>
     <div class="w-75 d-flex justify-content-between align-items-center">
 
-        <select name="" id="level">
-            <option value="100">Easy</option>
-            <option value="81">Medium</option>
-            <option value="49">Hard</option>
-          </select>
+        <div class="d-flex flex-columns">
+
+            <select name="" id="level">
+                <option>Select numbers to memorize</option>
+                <option value="5">5 - Monkey Game</option>
+                <option value="10">10 - Human Game</option>
+                <option value="20">20 - Rain Man Game</option>
+              </select>
+    
+              <select name="" id="timeToMemorize">
+                <option>Select the time to memorize</option>
+                <option value="5">5 seconds</option>
+                <option value="10">10 seconds</option>
+                <option value="20">30 seconds</option>
+              </select>
+
+              <select name="" id="maxOfNumberInterval">
+                <option>Select max interval</option>
+                <option value="100">1 - 100</option>
+                <option value="500">1 - 500</option>
+                <option value="1000">1 - 1000</option>
+              </select>
+
+        </div>
+
         <button id="playBtn" class="btn btn-outline-secondary btn-sm" onclick="startPlay()" >Play</button>
         <button id="resetBtn" class="btn btn-outline-secondary btn-sm" onclick="reset()" >Reset</button>
 

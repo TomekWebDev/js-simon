@@ -2,13 +2,17 @@ let createdNumbersArray = [];
 let userArray = [];
 let correctNumbersArray = [];
 
-let totalNumbers = 5; // da sostituire con input di "difficoltà"
 
-let maxOfNumberInterval = 100
+
+
 
 let timeToHideNumbers = 3000;
 
 function startPlay(){
+
+    let totalNumbers = document.getElementById("level").value;
+
+    let maxOfNumberInterval = document.getElementById
 
     while(createdNumbersArray.length < totalNumbers){
         let randomNumber = Math.round(Math.random()*(maxOfNumberInterval - 1)) + 1; //le bombe vengono create in un range tra 1 e il numero dei quadratini generati in base al level selezionato
@@ -63,7 +67,21 @@ function reset(){
 
 
 
+// let arrayUmano = [1,2,6,7,8]
+// let arrayRandom = [1,2,3,4,5]
+// let arrayNumGiusti = []
 
+// for(i=0; i < arrayRandom.length; i++){
+//     let ciclatoDiUmano = arrayUmano[i];
+
+//     if(arrayRandom.includes(ciclatoDiUmano)){
+//         arrayNumGiusti.push(arrayUmano[i])
+//     }
+//     else{}
+// }
+
+// console.log(arrayNumGiusti);
+// console.log(arrayNumGiusti.length);
 
 
 
